@@ -1,22 +1,41 @@
 .faq{
   @include component_size;
-  ul{
-    li{
-      list-style: none;
-      button{
-        display: inline-block;
-        font-size: $font-size-large;
-        width: 100%;
-        margin: 5px auto;
-        text-align: left;
-        @include button-style;
-        border-radius: 0;
-        background-color: #444;
+}
+
+.faq-list{
+  li{
+    margin: 5px;
+    word-break: keep-all; 
+    button{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: $font-size-medium;
+      width: 100%;
+      margin: 5px auto;
+      text-align: left;
+      @include button-style;
+      border-radius: 0;
+      background-color: #444;
+      position: relative;
+    }
+    p{
+      font-size: $font-size-medium;
+      background-color: #444;
+      // padding: 1.2rem 1rem;
+      height: 0;
+      opacity: 0;
+      transition: 0.3s;
+    }
+    p.open{
+      height: 130px;
+      opacity: 1;
+      padding: 1.2rem 1rem;
+      @include responsive($breakpoint-medium){
+        height: 200px;
       }
-      p{
-        font-size: $font-size-large;
-        background-color: #444;
-        padding: 1.2rem 1rem;
+      @include responsive($breakpoint-small){
+        height: 270px;
       }
     }
   }

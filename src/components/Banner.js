@@ -1,7 +1,9 @@
+import { FcFilmReel } from "react-icons/fc";
 
 const Banner = () => {
   return (
     <section className="banner">
+      <span><FcFilmReel /></span>
       <div className="banner-text">
         <div>
           <p>5,500원이면 만날 수 있는 넷플릭스</p>

@@ -2,19 +2,38 @@
   @include component_size;
   padding: 20px;
   transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &:hover{
     transform: scale(1.1);
     filter: brightness(1.4);
   }
+  span{
+    font-size: 60px;
+    width: 80px;
+    display: inline-block;
+    @include responsive($breakpoint-small){
+      display: none;
+    }
+  }
 }
 .banner-text{
+  flex: 1;
   border-radius: 10px;
   padding: 20px;
   background-image: linear-gradient(to right, #1c1c2b, #232344);
   display: flex;
   justify-content: space-between;
+  gap: 10px;
+  @include responsive($breakpoint-small){
+    flex-direction: column;
+  }
   button{
     @include button-style;
     background-color: #444;
+    @include responsive($breakpoint-small){
+      width: 40%;
+    }
   }
 }
