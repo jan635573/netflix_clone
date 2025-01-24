@@ -1,7 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import Membership from "./Membership";
 import { IoLanguage } from "react-icons/io5";
 
 const Header = () => {
+  const navigate = useNavigate();
   return (
     <header>
       <nav>
@@ -12,7 +14,7 @@ const Header = () => {
             <option>한국어</option>
             <option>English</option>
           </select>
-          <button>로그인</button>
+          <button onClick={()=>{navigate("/login")}}>로그인</button>
         </div>
       </nav>
       <div className="header-contents">

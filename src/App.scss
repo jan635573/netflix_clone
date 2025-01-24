@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import "./style/variables.scss";
 @import "./style/global.scss";
 @import "./style/mixins.scss";
@@ -8,3 +10,12 @@
 @import "./style/Whyjoin.scss";
 @import "./style/FAQ.scss";
 @import "./style/Footer.scss";
+@import "./style/Login.scss";
+
+body {
+  font-family: "Noto Sans";
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}

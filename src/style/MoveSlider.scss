@@ -34,9 +34,17 @@
   }
 }
 .slick-slider img{
-  width: 80%;
+  // width: 80%;
+  height: 290px;
+  object-fit: cover;
   margin: 0 auto;
   border-radius: 10px;
+  @include responsive($breakpoint-medium){
+    height: 250px;
+  }
+  @include responsive($breakpoint-small){
+    height: 210px;
+  }
 }
 .movie-card{
   position: relative;
@@ -47,9 +55,9 @@
   }
   span{
     position: absolute;
-    left: 20px;
+    left: 30px;
     bottom: 0;
-    font-size: 80px;
+    font-size: 90px;
     color: #000;
     font-weight: bolder;
     -webkit-text-stroke: 2px #fff;

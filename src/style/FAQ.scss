@@ -7,6 +7,7 @@
     margin: 5px;
     word-break: keep-all; 
     button{
+      height: 80px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -18,6 +19,7 @@
       border-radius: 0;
       background-color: #444;
       position: relative;
+      font-weight: bolder;
     }
     p{
       font-size: $font-size-medium;
@@ -35,7 +37,7 @@
         height: 200px;
       }
       @include responsive($breakpoint-small){
-        height: 270px;
+        height: 310px;
       }
     }
   }

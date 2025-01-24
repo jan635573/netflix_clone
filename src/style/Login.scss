@@ -1,0 +1,135 @@
+.login{
+  height: 100vh;
+  background-color: #fff;
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../../public/images/header_bg.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h2{
+    font-size: $font-size-large;
+  }
+  }
+  .login-popup{
+    width: 400px;
+    height: 80%;
+    padding: 30px;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 5px;
+    position: relative;
+    @include responsive($breakpoint-small){
+      width: 100%;
+      height: 100vh;
+    }
+    .close{
+      position: absolute;
+      right: 20px;
+      top: 0px;
+      font-size: 25px;
+      cursor: pointer;
+      color: #ddd;
+      &:hover{
+        color: #fff;
+      }
+    }
+    *{
+      margin: 15px 0;
+      font-size: $font-size-medium;
+    }
+    label, input, span, button{
+      display: block;
+      width: 100%;
+      border-radius: 5px;
+      outline: none;
+      }
+    a{
+      color: inherit;
+      text-decoration: none
+    }
+    button{
+      @include button-style;
+      padding: 10px;
+    }
+    button:nth-of-type(2){
+      background-color: #888;
+    }
+    form{
+      label{
+        position: relative;
+        span{
+          position: absolute;
+          top: 50%;
+          left: 15px;
+          transform: translateY(-50%);
+          margin: 0;
+          transition: 0.3s;
+        }
+        input{
+          padding: 10px 15px;
+          border: 1px solid #fff;
+          background-color: transparent;
+          color: #fff;
+          position: relative;
+          padding-top: 25px;
+          &:focus{
+            // box-shadow: inset 0 0 5px #fff;
+            outline: 2px solid #fff;
+            outline-offset: 2px;
+          }
+        }
+        &.focused{
+          span{
+            top: 15px;
+            font-size: 10px;
+          }
+        }
+        &.error{
+          input{
+            // outline: none;
+            border: 1px solid #f00;
+          }
+        }
+      }
+    p{
+      text-align: center;
+      color: #ddd;
+    }
+    a{
+      display: block;
+      text-align: center;
+    }
+    .input-error{
+      color: $primary-color;
+      font-weight: bolder;
+      font-size: 12px;
+      text-align: left;
+    }
+    }
+  }
+
+  .login-box{
+    label{
+      input[type=checkbox]{
+        width: 20px;
+        display: inline-block;
+        transform: scale(1.3);
+        outline: none;
+        accent-color: #fff;
+      }
+      span{
+        width: auto;
+        display: inline-block;
+      }
+    }
+    p:last-of-type{
+      font-size: $font-size-small;
+      color: #ddd;
+      a{
+        font-size: $font-size-small;
+        color: #00f;
+      }
+    }
+    a{
+      color: #fff;
+      font-weight: bolder;
+    }
+  }
