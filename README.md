@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Netflix Clone 사이트
+## 프로젝트 설명
+본 프로젝트는 OTT 서비스 플랫폼인 Netflix의 메인 페이지 주요 기능을 모방하여 React를 활용해 개발한 웹 사이트입니다. 메인 페이지 외에도 로그인 화면을 React Router로 구현하였고 TMDB API를 연동해 영화 정보를 가져왔습니다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 1. 레이아웃
+- **React 컴포넌트**를 기반으로 레이아웃을 배치하였습니다.
+- **Flex**를 사용하여 콘텐츠를 효율적이고 가독성 높게 배치하였습니다.
 
-## Available Scripts
+### 2. 색상 사용
+- 기존 Netflix의 메인 컬러인 붉은색(#e50914)을 포인트 컬러로 사용하였습니다.
+- 배경 색상은 어두운 회색(#111)을 사용하였습니다.
 
-In the project directory, you can run:
+### 3. UI 디자인 방식
+- 기존 Netflix의 메인 페이지 UI를 참고하여 비슷하게 제작하였습니다.
 
-### `yarn start`
+### 4. 반응형 웹 지원
+- 모바일, 태블릿, 데스크톱 등의 **다양한 화면 크기에 최적화된 반응형 레이아웃**을 제공하여 사용자의 접근성을 높였습니다.
+- CSS 미디어 쿼리를 활용하여 각 디바이스에 맞춰 적절하게 레이아웃과 요소 크기가 조정되게끔 개발하였습니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 5. 제작에 사용된 스킬 및 툴
+- **프레임워크** : React
+- **프론트엔드 개발** : React, React Router, SCSS
+- **플러그인** : TMDB API 연동, SCSS, Axios, react-slick
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 6. 제작 참여율
+- 개인 프로젝트(100%)로 진행
 
-### `yarn test`
+## 문제점 및 개선 계획
+### 1. 제작 사이트 문제점
+1. 메인, 로그인 페이지만 존재함
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 2. 향후 개선 계획
+1. 메인, 로그인 외의 페이지 제작
